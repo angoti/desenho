@@ -1,5 +1,7 @@
 package versao01;
 
+import java.awt.Graphics;
+
 public interface FormaGeometrica {
-	String getTipoDaForma();
+	void desenha(Graphics g);
 }

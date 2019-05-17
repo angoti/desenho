@@ -1,5 +1,7 @@
 package versao01;
 
+import java.awt.Graphics;
+
 public class Retangulo implements FormaGeometrica {
 	private int largura, altura;
 	private Ponto verticeSuperiorEsquerdo;
@@ -9,11 +11,6 @@ public class Retangulo implements FormaGeometrica {
 		this.largura = largura;
 		this.altura = altura;
 		this.verticeSuperiorEsquerdo = verticeSuperiorEsquerdo;
-	}
-
-	@Override
-	public String getTipoDaForma() {
-		return "retangulo";
 	}
 
 	public int getLargura() {
@@ -26,6 +23,11 @@ public class Retangulo implements FormaGeometrica {
 
 	public Ponto getVerticeSuperiorEsquerdo() {
 		return verticeSuperiorEsquerdo;
+	}
+
+	@Override
+	public void desenha(Graphics g) {
+		g.fillRect(verticeSuperiorEsquerdo.getX(), verticeSuperiorEsquerdo.getY(), largura, altura);
 	}
 
 }
