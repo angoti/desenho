@@ -1,1 +1,1 @@
-Exercício 1 da prova
+ExercÃ­cio 1 da prova
